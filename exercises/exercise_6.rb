@@ -17,6 +17,6 @@ puts "----------"
 
 
 # Your code goes here ...
-@store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
-@store1.employees.create(first_name: "Rubble", last_name: "Barney", hourly_rate: 60)
-@store1.employees.create(first_name: "Flinstone", last_name: "Fred", hourly_rate: 60)
+@store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60).save
+@store1.employees.create(first_name: "Barnie", last_name: "Ruble", hourly_rate: 70).save
+@store1.employees.create(first_name: "Fred", last_name: "Flinstone", hourly_rate: 80)
