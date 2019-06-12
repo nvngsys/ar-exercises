@@ -16,11 +16,14 @@ puts "----------"
 
 # Your code goes here ...
 
+#Their are two verions here - found you could do each two ways
+# .1
 Store.where(mens_apparel: TRUE).each do |store|
     puts store.name + ' ' + store.annual_revenue.to_s
     #puts store.annual_revenue
 end
 
+#. 2
 # this below works too
 @test2 = Store.where(mens_apparel: TRUE)
 @test2.each do |name|
