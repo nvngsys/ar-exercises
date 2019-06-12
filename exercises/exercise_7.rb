@@ -24,14 +24,16 @@ puts "----------"
 # 4. Display the error messages provided back from ActiveRecord to the user (one on each line) after you attempt to save/create the record
 
 # Your code goes here ...
-@storename = gets.chomp
+
+#@storename = gets.chomp
+
 # test insert
 #store1 = Store.create(name: storename, annual_revenue: 700000, mens_apparel: TRUE, womens_apparel: TRUE)
 
-@store = Store.create(name: @storename)
-@store.errors
-@store.errors.each do |attribute, message|
-  puts attribute
-  puts message
-end
+# @store = Store.create(name: @storename)
+# @store.errors
+# @store.errors.each do |attribute, message|
+#   puts attribute
+#   puts message
+# end
 
